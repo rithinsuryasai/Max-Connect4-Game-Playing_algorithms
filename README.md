@@ -27,6 +27,7 @@ All time measurements will report CPU time, not total time elapsed. CPU time doe
    
    
 ### Eval Function
+---
 The eval function is used to return a utility value when a terminal node occurs or the maximum given depth is reached.  
   
 1. If the game is not completed and the depth is reached then the optimal path will be where the currentplayer has greater score than the opponent.  
@@ -54,6 +55,7 @@ if(succGame.getPieceCount() == 42){
 ```
  
 ### Interactive Mode
+---
   
   java maxconnect4 interactive [input_file] [computer-next/human-next] [depth]  
   
@@ -77,6 +79,7 @@ if(succGame.getPieceCount() == 42){
     
     
 ### One-Move Mode
+---
   
   java maxconnect4 one-move [input_file] [output_file] [depth]
   
@@ -92,6 +95,7 @@ if(succGame.getPieceCount() == 42){
   * Save the current board state to the output file IN EXACTLY THE SAME FORMAT THAT IS USED FOR INPUT FILES.
   * Exit      
 ### Code Structure
+---
 
 The package maxconnect contains 3 java files: AiPlayer.java, Gameboard.java, maxconnect4.java
   
@@ -101,6 +105,7 @@ maxconnect4.java: This contains the main function and all the primary things lik
 
 
 #### HOW TO RUN:
+---
 1. In the maxconnect package go to 'src' then 'maxconnect' folder.  
 2. compile all the files by using the command:: javac *.java  
 3. then Copy the "input.txt" file to src  
@@ -115,5 +120,6 @@ give input as a number from range [1-7]:
 
 
 #### Links
+---
 [Algorithm](http://omega.uta.edu/~gopikrishnav/classes/common/4308_5360/slides/alpha_beta.pdf)  
 [Assignment](http://omega.uta.edu/~gopikrishnav/classes/2018/spring/4308_5360/assmts/assmt4.html)
